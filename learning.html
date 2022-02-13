@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-dark">
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <a class="navbar-brand">
+            <img src="images/css7.png" width="100" height="100" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <li class="nav-item active">
+                <a class="nav-link nav-borders" href="index.php">About Us <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-borders" href="channelconsultancy.html">Channel Consultancy</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-borders" href="boardadvisory.html">Board Advisory</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-borders" href="learning.html">Learning Development</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-borders" href="performance.html">High Performance Teams</a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact Us</a>
+                
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="mailto:keith@channelconsultants.com">keith@channelconsultants.com</a>
+                </div>
+
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- BACKGROUND IMAGE -->
+
+<a href="https://up2speed.biz" class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white d-flex justify-content-center align-items-center" 
+     style="background-image: url('/images/up-2-speed.png');
+            height: 80vh; flex-direction: column;">
+    <div class="title mb-3 h2 fade-in display-1" style="color: rgb(92, 72, 89);">Learning and Development <br>with Up 2 Speed</div>
+    <img style="width: 100px; padding-bottom: 10px;" src="images/up2speedlogo.png">
+    <div class="title mb-3 h2 fade-in display-4" style="border-radius: 50%; border: rgb(226, 133, 149) 5px solid; color: rgb(92, 72, 89);">Click to get started</div>
+</a>
+
+<div class="container-fluid text-white fade-in">
+    <p class="display-6 text-center" style="padding-top: 100px; padding-bottom: 100px; padding-left: 30px; padding-right: 30px;"><a href="https://up2speed.biz" style="color: rgb(226, 133, 149); text-decoration: none;">Up 2 Speed </a>is a Sales Enablement & Creative Design Firm that helps clients to maximize their revenue and profitability via their sales teams, pre-sales teams, and from their indirect channels. Up 2 Speed also helps companies to take existing learning & messaging and turn this into creative and effective digital assets.
+    </p>
+</div>
+
+
+
+
+<div id="footer" class="row container-fluid vw-100">
+    <p class="footer text-white">&copy; 2022 Company, Inc. &middot; <a class="text-white" href="#">Privacy</a> &middot; <a class="text-white" href="#">Terms</a></p>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    // Fade-in function
+            var allElements = document.querySelectorAll(".fade-in");
+            var windowHeight = self.innerHeight/1.15;
+            
+            function displayContent() {
+                for (var i = 0; i < allElements.length; i++) {
+                    var element = allElements[i];
+                    var elementPosition = element.getBoundingClientRect();
+                    if (elementPosition.top < windowHeight) {
+                        allElements[i].style.opacity = "1";
+                        allElements[i].style.marginTop = "0px";
+                    }
+                    else
+                        allElements[i].style.opacity = "0";
+                }
+            }
+            
+            window.addEventListener("scroll", displayContent);
+            
+            
+            var nav = document.getElementById("navigation");
+            
+            function addButton(x) {
+                if (x.matches) {
+                    var btn = document.createElement("button");
+                    navigation.appendChild(btn);
+                }
+            }
+            
+    
+    
+            
+</script>
+
+</body>
+</html>
