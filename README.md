@@ -1,2 +1,3 @@
 # channelconsultants.github.io
-Website
+
+Website of Channel Consultants Ltd. - a consultancy company accelerating growth in the technology sales channel between companies and their clients. 
