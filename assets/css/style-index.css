@@ -1,0 +1,48 @@
+.hero-container .hero-image {
+    width: 50vw;
+    height: 80vh; 
+    flex-direction: column; 
+    float: right;
+}
+
+.hero-container .hero-text {
+    flex-wrap: wrap; 
+    font-size: 30px; 
+    width: 45vw; 
+    float: left;
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-container .hero-image {
+        width: 100vw;
+        height: 40vh;
+        margin-top: 0%;
+    }
+    .hero-container .hero-text {
+        font-size: 20px; 
+        margin-top: 90px;
+        float: right;
+    }
+    .header-container .header-text {
+        margin-left: 70px !important;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .hero-container .hero-image {
+        width: 100vw;
+        height: 40vh;
+        margin-top: 0%;
+        object-position: left bottom;
+    }
+    .hero-container .hero-text {
+        font-size: 20px; 
+        margin-top: 0px;
+        float: right;
+        width: 100vw;
+    }
+    .header-container .header-text {
+        margin-left: 70px !important;
+    }
+}
