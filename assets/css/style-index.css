@@ -13,6 +13,22 @@
     margin-top: 300px;
 }
 
+html {
+    box-sizing: border-box;
+  }
+  *,*::before,*::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+  }
+  .wave-container {
+    background: #EEE;
+  }
+  .wave-container > svg {
+    display: block;
+  }
+
 @media only screen and (max-width: 900px) {
     .hero-container .hero-image {
         width: 100vw;
@@ -45,4 +61,34 @@
     .header-container .header-text {
         margin-left: 70px !important;
     }
+}
+
+body {
+  background-color: #eaeaea;
+}
+.navbar {
+  padding: 30px;
+}
+
+#hero-container {
+  position: relative;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#hero-text {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(20%, -50%);
+  font-size: 40px;
+}
+
+#search-button:hover {
+  color: yellow;
+}
+
+.card {
+  padding: 30px;
+  margin: 30px;
 }
