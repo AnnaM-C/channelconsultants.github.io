@@ -131,4 +131,48 @@
         </div>
       </div> -->
   </body>
+
+<script>
+    // Fade-in function
+            var allElements = document.querySelectorAll(".fade-in");
+            var windowHeight = self.innerHeight/1.2;
+            
+            function displayContent() {
+                for (var i = 0; i < allElements.length; i++) {
+                    var element = allElements[i];
+                    var elementPosition = element.getBoundingClientRect();
+                    if (elementPosition.top < windowHeight) {
+                        allElements[i].style.opacity = "1";
+                        allElements[i].style.marginTop = "0px";
+                    }
+                    else
+                        allElements[i].style.opacity = "0";
+                }
+            }
+            
+            window.addEventListener("scroll", displayContent);
+            
+            
+            var nav = document.getElementById("navigation");
+            
+            function addButton(x) {
+                if (x.matches) {
+                    var btn = document.createElement("button");
+                    navigation.appendChild(btn);
+                }
+            }
+            
+        
+    // Go to specific area function
+            window.setTimeout(function(){
+                if(window.location.hash){
+                    var $target  = $(window.location.hash).closest("#anchor");
+                    if($target.length)
+                        $('html, body').animate({scrollTop: $target.offset().top}, 1000);
+                }
+            }, 100);
+    
+            
+</script>
 </html>
+
