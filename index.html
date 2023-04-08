@@ -1,223 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style-index.css">
-
-</head>
-<body class="bg-dark">
-    
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-<div class="container-fluid">
-    <div class="row main">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
-    </div>
-</div> -->
-
-<!-- NAV BAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-        <a class="navbar-brand">
-            <img src="images/css9.png" width="100" height="100" alt="" style="filter: invert()">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-            <li class="nav-item active">
-                <a class="nav-link nav-borders" href="index.html">About Us <span class="sr-only"></span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link nav-borders" href="channelconsultancy.html">Channel Consultancy</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link nav-borders" href="boardadvisory.html">Board Advisory</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link nav-borders" href="learning.html">Learning Development</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link nav-borders" href="performance.html">High Performance Teams</a>
-            </li>
-
-            <li class="nav-item dropdown">
-
-                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contact Us</a>
-                
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="mailto:keith@channelconsultants.co.uk">keith@channelconsultants.co.uk</a>
-                </div>
-
-            </li>
-        </ul>
+    <title>Channel Consultants</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Channel Consultants</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="channelconsultancy.html">Channel Consultancy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="boardadvisory.html">Board Advisory</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Partners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="performance.html">High Performance Team</a></li>
+                  <li><a class="dropdown-item" href="learning.html">Learning Development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="mailto:keith@channelconsultants.co.uk">keith@channelconsultants.co.uk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
+      <div id="hero-container">
+        <img src="static/images/sky2.jpg" class="img-fluid" alt="...">
+        <h1 id="hero-text">Advisory services to enable your business to scale through channel coverage and leverage</h1>
+      </div>
 
-<!-- BACKGROUND IMAGE -->
-
-<!-- <div class="bg-image p-5 shadow-1-strong rounded mb-5 text-white d-flex justify-content-center align-items-center" 
-     style="background-image: url('/images/city-2.jpg');
-            height: 80vh; flex-direction: column; width: 50vw; float: right;">
-</div>
-<div class="container-fluid header">
-    <div class="subtitle fade-in display-4" style="width:40%">
-        Advisory services to enable your business to scale through channel coverage and leverage
-    </div>
-</div> -->
-
-<div class="hero-container container-fluid fade-in">
-    <div class="hero-image bg-image p-5 shadow-1-strong rounded mb-5 text-white d-flex justify-content-center align-items-center" 
-        style="background-image: url('/images/city-2.jpg');">
-    </div>
-    <div class="hero-text container-fluid text-white">
-            <p style="text-align: right;">Consultancy Services</p>
-            <p style="text-align: right;">Advisory services to enable your business to scale through channel coverage and leverage</p>
-            <a href="mailto:keith@channelconsultants.co.uk" class="title mb-3 h4 fade-in" style="text-decoration:none; float:right; border-radius: 40px; padding: 10px 20px; background-color: rgb(52, 71, 236); color: rgb(231, 227, 240); opacity: 1; margin-top: 0px;">Contact Us</a>
-    </div>
-</div>
-
-<!-- row: meet the team header
-<div class="col-sm-12 container-fluid text-white d-flex justify-content-center fade-in">
-    <div class="display-6" style="padding-bottom: 20px; margin: auto;">Meet the Team</div>
-</div> -->
-
-<!-- row: founder and picture -->
-    <div class="header-container container-fluid d-flex fade-in">
-        <p class="header-text title mb-3 h2 fade-in display-6 text-white" style="padding-bottom: 20px; margin: auto;">Meet Our Founder</p>
-    </div>
-    <div class="header-container col-sm-12 container-fluid text-white d-flex fade-in">
-        <img class="header-text" id="img-fluid max-width: 100%" style="padding-bottom: 20px; margin: auto; border-radius: 20px;" src="images/photo.png">
-    </div>
-    <div>
-    <div class="header-container container-fluid d-flex fade-in">
-        <p class="header-text text-white h3" style="padding-bottom: 20px; margin: auto;">Keith Carter</p>
-    </div>
-
-<!-- row: text -->
-    <div class="header-container col-sm-12 container-fluid text-white fade-in d-flex justify-content-center text-right" style="padding-bottom: 70px;">
-        <p class="header-text" id="paragraph3" style="width: 90%; font-size: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-            Keith posesses a wealth of experience in managing global channels and alliances for top tech companies in cyber security, cloud SaaS, and converged 
-            communications. With a proven track record of leading teams and developing multimillion-dollar service contracts, Keith drives growth and profits. 
-            His strong leadership and tried-and-tested methodology have enabled companies to create winning market strategies, making him a valuable asset for 
-            any business seeking to scale globally. Keith's in-depth understanding of the channel ecosystem, honed from years working with vendors, consultants, 
-            and partners, is crucial for success.</p>
-    </div>
-    <div class="container-fluid d-flex justify-content-center fade-in">
-        <p class="title mb-3 h2 fade-in display-6 text-white" style="padding-bottom: 80px; margin: auto;">What We Do</p>
-    </div>
-
-    <!-- (x4) ICONS -->
-<div class="container-fluid d-flex flex-column flex-md-row" style="margin-bottom: 60px;">
-    <div class="container-fluid d-flex justify-content-around flex-column fade-in" style="margin-top: 20px; margin-bottom: 20px;">
-            <img class="img-fluid" src="images/analysisiconblack.png" style="filter: invert(); height: 100px; margin: auto; padding-bottom: 30px;">
-            <a class="h6 link-light" href="#anchor1" style="margin: auto;">Channel Model</a>
-    </div>
-    <div class="container-fluid d-flex justify-content-around flex-column fade-in" style="margin-top: 20px; margin-bottom: 20px;">
-            <img class="img-fluid" src="images/bulbiconblack.png" style="filter: invert(); height: 100px; margin: auto; padding-bottom: 30px;">
-            <a class="h6 link-light" href="#anchor2" style="margin: auto;">Metrics and Measurement</a>
-    </div>
-    <div class="container-fluid d-flex justify-content-around flex-column fade-in" style="margin-top: 20px; margin-bottom: 20px;">
-            <img class="img-fluid" src="images/goalsicon.png" style="filter: invert(); height: 100px; margin: auto; padding-bottom: 30px;">           
-            <a class="h6 link-light" href="#anchor3" style="margin: auto;">Partner Advisory</a>
-    </div>
-    <div class="container-fluid d-flex justify-content-around flex-column fade-in" style="margin-top: 20px; margin-bottom: 20px;">
-            <img class="img-fluid" src="images/colabicon.png" style="filter: invert(); height: 100px; margin: auto; padding-bottom: 30px;">
-            <a class="h6 link-light" href="#anchor4" style="margin: auto;">MSSP</a>
-    </div>
-</div>
-
-<!-- <div class="position-relative">
-    <div
-      class="svg-wrapper bg-image shadow-1-strong rounded-lg"
-      style="margin-top: 70px;">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        class="svg"
-        style="
-          height: 669px;
-          width: 100%;
-          fill: #D8D2D2;
-          transform: rotateY(0deg);
-        "
-      >
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-      </svg>
-    </div>
-</div> -->
-
-<div class="container-fluid" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="row fade-in">
-        <div id="anchor1" class="col-md">
-            <img class="img-fluid" src="images/shard.jpg" style="border-radius: 6%;">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="static/images/paperclips.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Channel Model</h5>
+              <p class="card-text">Channel Segmentation is critical to ensure vendors and partners alike are getting the productivity from their eco-system through coverage and leverage. The methodology applied to gain this valuable route to market is the foundation of what we do.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md text" style="top: 50px; margin: auto; text-align: center;">
-            <h1 class="d-flex justify-content-center header text-white" style="padding-bottom: 10px;">Channel Model</h1>
-            <p class="d-flex justify-content-center text-white" style="margin-top: 20px; margin-bottom: 20px;">Channel Segmentation is critical to ensure vendors and partners alike are getting the productivity from their eco-system through coverage and leverage. The methodology applied to gain this valuable route to market is the foundation of what we do.</p>
+        <div class="col">
+          <div class="card">
+            <img src="static/images/office.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Metrics and Measurement</h5>
+              <p class="card-text">How are the channel and indeed the channel managers preforming? Having the right leading and lagging indicators, or as we call it input and output metrics in place and the ability track real time, are critical to gauge the health of the channel and be able to course correct before it becomes a trend.</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="row reverse fade-in">
-        <div class="col-md text" style="top: 50px; margin: auto; text-align: center;">
-            <h1 class="d-flex justify-content-center header text-white" style="padding-bottom: 10px;">Metrics and Measurement</h1>
-            <p class="d-flex justify-content-center text-white" style="margin-top: 20px; margin-bottom: 20px;">How are the channel and indeed the channel managers preforming? Having the right leading and lagging indicators, or as we call it input and output metrics in place and the ability track real time, are critical to gauge the health of the channel and be able to course correct before it becomes a trend.</p>
+        <div class="col">
+          <div class="card">
+            <img src="static/images/desk.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Partner Advisory</h5>
+              <p class="card-text">Gaining regular and meaningful insights from your most valued partners is critical to ensure the vendor is aligned to market demands and customers business outcomes. Your partners are at the coalface of the customer and ensuring these sessions are providing the best possible insights and outcomes is critical for future sucess.</p>
+            </div>
+          </div>
         </div>
-        <div id="anchor2" class="col-md">
-            <img class="img-fluid" src="images/teamwork_2.jpg" style="border-radius: 7%;">
+        <div class="col">
+          <div class="card">
+            <img src="static/images/lemon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MSSP</h5>
+              <p class="card-text">More and more of today's technology is being consumed by customers through managed services. Having the right paybooks alert ingestions reporting and commercial model in place from the technology vendor is essential to ensure the customer is receiving their business outcomes from the contracted MSSP and that the MSSP is provide these services in the most cost-effective way whilst maintaining high customer satisfaction.</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="row fade-in">
-        <div id="anchor3" class="col-md">
-            <img class="img-fluid" src="images/bright_ideas.jpg" style="border-radius: 7%;">
-        </div>
-        <div class="col-md text" style="top: 50px; margin: auto; text-align: center;">
-            <h1 class="d-flex justify-content-center header text-white" style="padding-bottom: 10px;">Partner Advisory</h1>
-            <p class="d-flex justify-content-center text-white" style="margin-top: 20px; margin-bottom: 20px;">Gaining regular and meaningful insights from your most valued partners is critical to ensure the vendor is aligned to market demands and customers business outcomes. Your partners are at the coalface of the customer and ensuring these sessions are providing the best possible insights and outcomes is critical for future sucess.</p>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="row reverse fade-in">
-        <div class="col-md text" style="top: 50px; margin: auto; text-align: center;">
-            <h1 class="d-flex justify-content-center header text-white" style="padding-bottom: 10px;">MSSP</h1>
-            <p class="d-flex justify-content-center text-white" style="margin-top: 20px; margin-bottom: 20px;">More and more of today's technology is being consumed by customers through managed services. Having the right paybooks alert ingestions reporting and commercial model in place from the technology vendor is essential to ensure the customer is receiving their business outcomes from the contracted MSSP and that the MSSP is provide these services in the most cost-effective way whilst maintaining high customer satisfaction.</p>
-        </div>
-        <div id="anchor4" class="col-md">
-            <img class="img-fluid" src="images/man-working-at-desk-on-computer.png" style="border-radius: 7%;">
-        </div>
-    </div>
-</div>
+      </div>
 
-<div id="footer" class="row container-fluid vw-100">
-    <p class="footer text-white">&copy; 2022 Company, Inc. &middot; <a class="text-white" href="#">Privacy</a> &middot; <a class="text-white" href="#">Terms</a></p>
-</div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div> -->
+  </body>
 
 <script>
     // Fade-in function
@@ -261,6 +174,5 @@
     
             
 </script>
-
-</body>
 </html>
+
