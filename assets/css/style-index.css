@@ -29,7 +29,7 @@ html {
     display: block;
   }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 896px) {
     .hero-container .hero-image {
         width: 100vw;
         height: 40vh;
@@ -43,9 +43,16 @@ html {
     .header-container .header-text {
         margin-left: 70px !important;
     }
+    #hero-text {
+      position: absolute;
+      top: 30%;
+      right: 50%;
+      transform: translate(20%, -50%);
+      font-size: 12px;
+    }
   }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
     .hero-container .hero-image {
         width: 100vw;
         height: 40vh;
@@ -61,7 +68,16 @@ html {
     .header-container .header-text {
         margin-left: 70px !important;
     }
+
+    #hero-text {
+      position: absolute;
+      top: 30%;
+      right: 50%;
+      transform: translate(20%, -50%);
+      font-size: 12px;
+    }
 }
+
 
 body {
   background-color: #eaeaea;
