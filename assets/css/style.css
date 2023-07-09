@@ -5,6 +5,22 @@ body {
     padding: 30px;
   }
 
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+
+
+  }
+  .image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   #hero-text, #channel-consultants-text, #board-advisory-text {
     position: absolute;
     top: 39%;
@@ -149,4 +165,10 @@ body {
       }
 }  
 
+
+@media (max-width: 330px) { 
+  .image2 {
+    width: 200px;
+  }
+}
 
