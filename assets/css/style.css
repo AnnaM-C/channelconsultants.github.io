@@ -102,6 +102,8 @@ body {
         padding-left: 120px;
         padding-right: 120px;
         padding-bottom: 100px;
+        border: red;
+
       }
 
       #hero-container, #channel-consultants-hero, #board-advisory-hero {
